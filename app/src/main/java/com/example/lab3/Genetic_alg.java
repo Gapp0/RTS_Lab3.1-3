@@ -42,6 +42,12 @@ public class Genetic_alg extends AppCompatActivity {
                     res += "+" + x[i] + "*" + roots[i];
                 }
                 res+="="+y;
+                
+                Context context = getApplicationContext();
+                String msg = "To open mobile development!"; 
+                int duration = Toast.LENGTH_SHORT;
+                Toast.makeText(context, msg, duration).show();
+                
                 TextView resView=(TextView)findViewById(R.id.res);
                 resView.setText(res);
             }
